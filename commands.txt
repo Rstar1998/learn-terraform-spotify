@@ -1,0 +1,13 @@
+
+set SPOTIFY_CLIENT_REDIRECT_URI=http://localhost:27228/spotify_callback
+
+docker run --rm -it -p 27228:27228 --env-file ./.env ghcr.io/conradludgate/spotify-auth-proxy
+
+terraform init
+
+terraform plan
+
+terraform apply
+
+
+Playlist link : https://open.spotify.com/playlist/49Hn0ZJ2rHiqu2ZfkhIGQ2
